@@ -1,0 +1,27 @@
+{
+  "name": "telecom-api-challenge",
+  "version": "1.0.0",
+  "description": "An API that provides access to ImaginaryCo's customer phone numbers",
+  "main": "server/cluster.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armouti/telecom-api-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armouti/telecom-api-challenge/issues"
+  },
+  "homepage": "https://github.com/armouti/telecom-api-challenge#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jest": "^24.0.0",
+    "supertest": "^3.4.2"
+  }
+}
