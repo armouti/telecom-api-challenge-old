@@ -72,13 +72,13 @@ Activates a saved phone number.
 
 **`.getNumberInfo(phoneNumber)`**  
   -  `phoneNumber`: `<string>`  
-**RETURNS**: PhoneNumber Information `<object>` 
-**FORMAT**: `{ customer_id: <int>, isActivated: <boolean> }`
+**RETURNS**: PhoneNumber Information `<object>`  
+**FORMAT**: `{ customer_id: <int>, isActivated: <boolean> }`  
 Retrieves all information associated with a stored Phone Number  
 
 **`.getNumbersByCID(customer_id)`**  
   -  `customer_id`: `<integer>`  
-**RETURNS**: All Phone Numbers Associated with the customer_id `Array<string>`
+**RETURNS**: All Phone Numbers Associated with the customer_id `Array<string>`  
 **FORMAT**: `[phoneNumber1<string>, phoneNumber2<string>, ...]`  
 Retrieves all phone numbers associated with a customer ID  
 
@@ -86,7 +86,7 @@ Retrieves all phone numbers associated with a customer ID
 **`.addCustomer(firstName, lastName)`**  
   -  `firstName`: `<string>`
   -  `lastName`: `<string>`  
-**RETURNS**: newly-created customer ID `<int>`
+**RETURNS**: newly-created customer ID `<int>`  
 Stores a new customer name in the customers database;  
 
 **`.getCustomerById(cid)`**  
