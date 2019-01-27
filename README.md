@@ -22,8 +22,8 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 **`.addNumber(phoneNumber, customer_id, isActivated)`**  
   -  `phoneNumber`: `<string>`
   -  `customer_id`: `<integer>`
-  -  `isActivated`: `<boolean>`
-RETURNS: `<boolean>`
+  -  `isActivated`: `<boolean>`  
+RETURNS: `<boolean>`  
 `true` if stored successfully, `false` otherwise.  
 Stores a new phone number in the PhoneNumber database;  
 
@@ -33,13 +33,13 @@ RETURNS: `<boolean>` - `true` if activation is successfull, `false` if number do
 Activates a saved phone number.  
 
 **`.getNumberInfo(phoneNumber)`**  
-  -  `phoneNumber`: `<string>`
+  -  `phoneNumber`: `<string>`  
 RETURNS: PhoneNumber Information `<object>` 
 FORMAT: `{ customer_id: <int>, isActivated: <boolean> }`
 Retrieves all information associated with a stored Phone Number  
 
 **`.getNumbersByCID(customer_id)`**  
-  -  `customer_id`: `<integer>`
+  -  `customer_id`: `<integer>`  
 RETURNS: All Phone Numbers Associated with the customer_id `Array<string>`
 FORMAT: `[phoneNumber1<string>, phoneNumber2<string>, ...]`  
 Retrieves all phone numbers associated with a customer ID  
