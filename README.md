@@ -23,13 +23,13 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
   -  `phoneNumber`: `<string>`
   -  `customer_id`: `<integer>`
   -  `isActivated`: `<boolean>`  
-RETURNS: `<boolean>`  
+*RETURNS*: `<boolean>`  
 `true` if stored successfully, `false` otherwise.  
 Stores a new phone number in the PhoneNumber database;  
 
 **`.activate(phoneNumber)`**  
   -  `phoneNumber`: `<string>`  
-RETURNS: `<boolean>` - `true` if activation is successfull, `false` if number does not exists or operation was unsuccessfull.  
+**RETURNS**: `<boolean>` - `true` if activation is successfull, `false` if number does not exists or operation was unsuccessfull.  
 Activates a saved phone number.  
 
 **`.getNumberInfo(phoneNumber)`**  
