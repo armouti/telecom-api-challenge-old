@@ -4,8 +4,8 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 ## Contents
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
-- [PhoneNumber Model](#phonenumber-model)
-- [Customer Model](#customer-model)
+- [PhoneNumberTable DB model](#phonenumber-db-model)
+- [CustomerTable DB Model](#customertable-db=model)
 - [Project Guidelines](#project-guidelines)
 - [Tests](#tests)
 - [FAQ](#faq)
@@ -83,19 +83,31 @@ Retrieves all information associated with a stored Phone Number
 Retrieves all phone numbers associated with a customer ID  
 
 ## CustomerTable DB Model
+**`.addCustomer(firstName, lastName)`**  
+  -  `firstName`: `<string>`
+  -  `lastName`: `<string>`
+**RETURNS**: newly-created customer ID `<int>`
+Stores a new customer name in the customers database;  
 
+**`.getCustomerById(cid)`**  
+  -  `cid`: `<int>`
+**RETURNS**: customer info `<object>`  
+Retrieves customer info associated with cid.  
 
-#### Methods:  
-
-
-#### Reference:
+**`.getCIDbyName(firstName, lastName)`**  
+  -  `firstName`: `<string>`
+  -  `lastName`: `<string>`
+**RETURNS**: customer ID (cid) `<int>`  
+Retrieves the cid of the customer with the passed firstName and lastName.  
 
 ## Project Guidelines
-
+cid = customer id
 #### Naming Convention:
 - Use snake_casing for DB variable names
 - Use camelCasing for all other variable names
 
 ## Tests
+To run the tests, simple invoke:  
+`npm test`  
 
 ## FAQ
