@@ -15,7 +15,7 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 To get started with the project:
 - `git clone https://github.com/armouti/telecom-api-challenge.git`
 - `cd telecom-api-challenge`
-- `npm install && npm run`
+- `npm install && npm run`  
 
 ## API Endpoints
 
