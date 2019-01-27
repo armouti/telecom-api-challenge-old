@@ -20,7 +20,7 @@ describe('PhoneNumber DB Model', () => {
   test('Retrieves all numbers by customer_id', () => {
     //adding another number
     phoneNumberTable.addNumber(testNumber2, testId);
-    
+
     const num = phoneNumberTable.getNumbersByCID(testId);
     expect(num).toEqual([testNumber, testNumber2]);
   });
