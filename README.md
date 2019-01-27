@@ -85,18 +85,18 @@ Retrieves all phone numbers associated with a customer ID
 ## CustomerTable DB Model
 **`.addCustomer(firstName, lastName)`**  
   -  `firstName`: `<string>`
-  -  `lastName`: `<string>`
+  -  `lastName`: `<string>`  
 **RETURNS**: newly-created customer ID `<int>`
 Stores a new customer name in the customers database;  
 
 **`.getCustomerById(cid)`**  
-  -  `cid`: `<int>`
+  -  `cid`: `<int>`  
 **RETURNS**: customer info `<object>`  
 Retrieves customer info associated with cid.  
 
 **`.getCIDbyName(firstName, lastName)`**  
   -  `firstName`: `<string>`
-  -  `lastName`: `<string>`
+  -  `lastName`: `<string>`  
 **RETURNS**: customer ID (cid) `<int>`  
 Retrieves the cid of the customer with the passed firstName and lastName.  
 
