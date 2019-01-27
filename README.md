@@ -14,6 +14,20 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 
 ## API Endpoints
 
+**`GET /api/numbers`**
+Returns all phone numbers in the system.
+- params: none;
+Content: 
+```
+{ 
+  numbers: [
+    phoneNumber1<string>, 
+    phoneNumber2<string>,
+    phoneNumber3<string>,
+    ...
+  ]
+}
+```
 
 
 ## PhoneNumberTable DB Model
@@ -23,7 +37,7 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
   -  `phoneNumber`: `<string>`
   -  `customer_id`: `<integer>`
   -  `isActivated`: `<boolean>`  
-*RETURNS*: `<boolean>`  
+**RETURNS**: `<boolean>`  
 `true` if stored successfully, `false` otherwise.  
 Stores a new phone number in the PhoneNumber database;  
 
@@ -34,14 +48,14 @@ Activates a saved phone number.
 
 **`.getNumberInfo(phoneNumber)`**  
   -  `phoneNumber`: `<string>`  
-RETURNS: PhoneNumber Information `<object>` 
-FORMAT: `{ customer_id: <int>, isActivated: <boolean> }`
+**RETURNS**: PhoneNumber Information `<object>` 
+**FORMAT**: `{ customer_id: <int>, isActivated: <boolean> }`
 Retrieves all information associated with a stored Phone Number  
 
 **`.getNumbersByCID(customer_id)`**  
   -  `customer_id`: `<integer>`  
-RETURNS: All Phone Numbers Associated with the customer_id `Array<string>`
-FORMAT: `[phoneNumber1<string>, phoneNumber2<string>, ...]`  
+**RETURNS**: All Phone Numbers Associated with the customer_id `Array<string>`
+**FORMAT**: `[phoneNumber1<string>, phoneNumber2<string>, ...]`  
 Retrieves all phone numbers associated with a customer ID  
 
 ## CustomerTable DB Model
