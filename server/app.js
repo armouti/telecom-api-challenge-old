@@ -17,7 +17,7 @@ app.get('/api/numbers', (req, res) => {
 
 //Activates a phone number
 app.put('/api/numbers', (req, res) => {
-  phoneNumberTable.activate(req.body.number);
+  phoneNumberTable.activate(req.body.phoneNumber);
   res.send(true);
 });
 

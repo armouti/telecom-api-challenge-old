@@ -17,7 +17,7 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 #### `GET /api/numbers`  
 Returns all phone numbers in the system.  
 - params: none;  
-Content:  
+- Content:  
 ```
 { 
   numbers: [
@@ -29,8 +29,28 @@ Content:
 }
 ```  
 
-## PhoneNumberTable DB Model
+#### `GET /api/numbers/:fullname`  
+Returns all phone numbers associated with the fullname in the system.
+- URL params: fullname = `firstName_lastName` (first and last names MUST be seperated by underscore char)
+- Content:
+```
+{ 
+  numbers: [
+    phoneNumber1<string>, 
+    phoneNumber2<string>,
+    phoneNumber3<string>,
+    ...
+  ]
+}
+```  
 
+#### `PUT /api/numbers`  
+Activates the phone number provided in the body.
+(given it's already stored in the system).
+- Body params: `{ phoneNumber: <string> }`
+- Content: `true` (if successful)
+
+## PhoneNumberTable DB Model
   
 **`.addNumber(phoneNumber, customer_id, isActivated)`**  
   -  `phoneNumber`: `<string>`
@@ -68,7 +88,7 @@ Retrieves all phone numbers associated with a customer ID
 ## Project Guidelines
 
 #### Naming Convention:
-- Use snake_casing for DB variables/values
+- Use snake_casing for DB variable names
 - Use camelCasing for all other variable names
 
 ## Tests

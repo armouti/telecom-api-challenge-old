@@ -56,14 +56,14 @@ describe('GET /api/numbers/:fullname', () => {
 describe('PUT /api/numbers', () => {
   test('Responds to a PUT request', () => {
     return request(app).put('/api/numbers')
-    .send({ number: phoneNum1 })
+    .send({ phoneNumber: phoneNum1 })
     .then((response) => {
       expect(response.statusCode).toBe(200);
     });
   });
   test('Changes the .isActive property of a phoneNumber to TRUE', () => {
     return request(app).put('/api/numbers')
-    .send({ number: phoneNum3 })
+    .send({ phoneNumber: phoneNum3 })
     .then((response) => {
       const isActive = phoneNumberTable.getNumberInfo(phoneNum3).isActive;
       expect(isActive).toBeTruthy();
