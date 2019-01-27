@@ -17,10 +17,7 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 
 
 ## PhoneNumberTable DB Model
-[`.addNumber(phoneNumber, customer_id, isActivated)`](#.addNumber(phoneNumber, customer_id, isActivated));
-`.activate(phoneNumber)`  
-`.getNumberInfo(phoneNumber)`  
-`.getNumbersByCID(customer_id)`  
+
   
 **`.addNumber(phoneNumber, customer_id, isActivated)`**  
   -  `phoneNumber`: `<string>`
