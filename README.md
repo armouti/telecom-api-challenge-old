@@ -6,7 +6,7 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 - [API Endpoints](#api-endpoints)
 - [PhoneNumber Model](#phonenumber-model)
 - [Customer Model](#customer-model)
-- [Helper Functions](#helper-functions)
+- [Project Guidelines](#project-guidelines)
 - [Tests](#tests)
 - [FAQ](#faq)
 
@@ -14,13 +14,14 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 
 ## API Endpoints
 
+
+
 ## PhoneNumberTable DB Model
-`.addNumber(phoneNumber, customer_id, isActivated)`  
+[`.addNumber(phoneNumber, customer_id, isActivated)`](#.addNumber(phoneNumber, customer_id, isActivated));
 `.activate(phoneNumber)`  
 `.getNumberInfo(phoneNumber)`  
 `.getNumbersByCID(customer_id)`  
-
-
+  
 **`.addNumber(phoneNumber, customer_id, isActivated)`**  
   -  `phoneNumber`: `<string>`
   -  `customer_id`: `<integer>`
@@ -54,8 +55,11 @@ Retrieves all phone numbers associated with a customer ID
 
 #### Reference:
 
-## Helper Functions
+## Project Guidelines
 
+#### Naming Convention:
+- Use snake_casing for DB variables/values
+- Use camelCasing for all other variable names
 
 ## Tests
 
