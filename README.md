@@ -14,10 +14,10 @@ This is an API that provides access to ImaginaryTeleCo's customer phone numbers.
 
 ## API Endpoints
 
-**`GET /api/numbers`**
-Returns all phone numbers in the system.
-- params: none;
-Content: 
+#### `GET /api/numbers`  
+Returns all phone numbers in the system.  
+- params: none;  
+Content:  
 ```
 { 
   numbers: [
@@ -27,8 +27,7 @@ Content:
     ...
   ]
 }
-```
-
+```  
 
 ## PhoneNumberTable DB Model
 
